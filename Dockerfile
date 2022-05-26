@@ -1,4 +1,4 @@
-FROM ubuntu:latest
+FROM ubuntu:2004
 
 RUN apt update && apt -y install ca-certificates wget net-tools gnupg
 RUN wget -qO - https://as-repository.openvpn.net/as-repo-public.gpg | apt-key add -
